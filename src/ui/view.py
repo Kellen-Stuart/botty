@@ -60,7 +60,7 @@ def return_to_play() -> bool:
     substrings = ["NPC", "Panel", "SaveAndExit"]
     img=grab()
     start=time.time()
-    while 1:
+    while (elapsed := (time.time() - start) < 5):
         need_escape = False
         if "DARK" in detect_screen_object(ScreenObjects.InGame, img).name:
             need_escape = True
@@ -70,20 +70,29 @@ def return_to_play() -> bool:
                     break
         if need_escape:
             keyboard.send("esc")
-            wait(0.2)
+            wait(0.6, 1)
             img=grab()
         else:
             break
-        if time.time() - start > 10:
-            return False
+    if not elapsed:
+        return False
+    return True
 
+# Testing
 if __name__ == "__main__":
     import keyboard
     import os
-    from screen import start_detecting_window
+    from screen import start_detecting_window, stop_detecting_window
     start_detecting_window()
-    keyboard.add_hotkey('f12', lambda: Logger.info('Force Exit (f12)') or os._exit(1))
-    print("Move to d2r window and press f11")
+    keyboard.add_hotkey('f12', lambda: Logger.info('Force Exit (f12)') or stop_detecting_window() or os._exit(1))
+    print("Go to D2R window and press f11 to start game")
     keyboard.wait("f11")
-    while 1:
-        return_to_play()
+    from config import Config
+    from template_finder import TemplateFinder
+
+    while True:
+        img = grab()
+        if (result := TemplateFinder().search(["YOU_HAVE_DIED", "NOT_ENOUGH_GOLD"], img, color_match=Config().colors["red"], use_grayscale=True, best_match=True)).valid:
+            print(f"match: {result.score}")
+        else:
+            print("no match")
