@@ -3,6 +3,7 @@ import random
 import time
 import cv2
 import math
+from inventory import consumables
 import keyboard
 import numpy as np
 from char.capabilities import CharacterCapabilities
@@ -29,15 +30,23 @@ class IChar:
         self.capabilities = None
 
     def _discover_capabilities(self) -> CharacterCapabilities:
-        if self._skill_hotkeys["teleport"]:
-            if self.select_tp():
-                if self.skill_is_charged():
-                    return CharacterCapabilities(can_teleport_natively=False, can_teleport_with_charges=True)
-                else:
-                    return CharacterCapabilities(can_teleport_natively=True, can_teleport_with_charges=False)
-            return CharacterCapabilities(can_teleport_natively=False, can_teleport_with_charges=True)
+        override = Config().advanced_options["override_capabilities"];
+        if override is None:
+            if self._skill_hotkeys["teleport"]:
+                if self.select_tp():
+                    if self.skill_is_charged():
+                        return CharacterCapabilities(can_teleport_natively=False, can_teleport_with_charges=True)
+                    else:
+                        return CharacterCapabilities(can_teleport_natively=True, can_teleport_with_charges=False)
+                return CharacterCapabilities(can_teleport_natively=False, can_teleport_with_charges=True)
+            else:
+                return CharacterCapabilities(can_teleport_natively=False, can_teleport_with_charges=False)
         else:
-            return CharacterCapabilities(can_teleport_natively=False, can_teleport_with_charges=False)
+            Logger.debug(f"override_capabilities is set to {override}")
+            return CharacterCapabilities(
+                can_teleport_natively="can_teleport_natively" in override,
+                can_teleport_with_charges="can_teleport_with_charges" in override
+            )
 
     def discover_capabilities(self, force = False):
         if IChar._CrossGameCapabilities is None or force:
@@ -172,6 +181,7 @@ class IChar:
         if not skills.has_tps():
             return False
         mouse.click(button="right")
+        consumables.increment_need("tp", 1)
         roi_mouse_move = [
             int(Config().ui_pos["screen_width"] * 0.3),
             0,
@@ -191,6 +201,7 @@ class IChar:
                 self.move(pos_m)
                 if skills.has_tps():
                     mouse.click(button="right")
+                    consumables.increment_need("tp", 1)
                 wait(0.8, 1.3) # takes quite a while for tp to be visible
             template_match = detect_screen_object(ScreenObjects.TownPortal)
             if template_match.valid:
