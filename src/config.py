@@ -170,7 +170,6 @@ class Config:
                 self.items["misc_gold"].pickit_type = 1
 
     def load_data(self):
-        Logger.info("Loading Config Data")
         self._config = configparser.ConfigParser()
         self._config.read('config/params.ini')
         self._game_config = configparser.ConfigParser()
@@ -239,7 +238,7 @@ class Config:
             "belt_hp_columns": int(self._select_val("char", "belt_hp_columns")),
             "belt_mp_columns": int(self._select_val("char", "belt_mp_columns")),
             "stash_gold": bool(int(self._select_val("char", "stash_gold"))),
-            "gold_trav_only": bool(int(self._select_val("char", "gold_trav_only"))),
+            "min_gold_to_pick": int(_default_iff(self._select_val("char", "min_gold_to_pick"), '', 0)),
             "use_merc": bool(int(self._select_val("char", "use_merc"))),
             "id_items": bool(int(self._select_val("char", "id_items"))),
             "open_chests": bool(int(self._select_val("char", "open_chests"))),
