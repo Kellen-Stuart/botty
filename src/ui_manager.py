@@ -98,6 +98,7 @@ class ScreenObjects:
         ref=["CHARACTER_STATE_ONLINE", "CHARACTER_STATE_OFFLINE"],
         roi="character_online_status",
         best_match=True,
+        threshold=0.5
     )
     SelectedCharacter=ScreenObject(
         ref=["CHARACTER_ACTIVE"],
