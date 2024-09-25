@@ -98,7 +98,7 @@ def select_char() -> bool:
             wait(1, 1.5)
         else:
             Logger.error("select_char: Could not find online/offline tabs")
-            return False
+            #return False
         if not (match := detect_screen_object(ScreenObjects.SelectedCharacter, img)).valid:
             Logger.error("select_char: Could not find highlighted profile")
             return False
