@@ -17,8 +17,8 @@
 //================= Unique Charms ================
 //------------------------------------------------
 
-//[Name] == Grandcharm && [Quality] == Unique     // Gheed's Fortune
-//[Name] == Smallcharm && [Quality] == Unique     // Annihilus Charm
+[Name] == Grandcharm && [Quality] == Unique     // Gheed's Fortune
+[Name] == Smallcharm && [Quality] == Unique     // Annihilus Charm
 
 //------------------------------------------
 //================= Potions ================
@@ -119,7 +119,7 @@
 //[Name] == Flawlesssapphire
 //[Name] == Flawlessskull
 //[Name] == Flawlesstopaz
-//[Name] == Perfectamethyst
+[Name] == Perfectamethyst
 //[Name] == Perfectdiamond
 //[Name] == Perfectemerald
 //[Name] == Perfectruby
