@@ -815,6 +815,9 @@
 // <<<<<<<<< [ Ethereal Superior 1h Socketed/Non-Socketed Weapons ] >>>>>>>>>
 //[Name] == Berserkeraxe && [Quality] == Superior && [Flag] == Ethereal # [Enhanceddamage] >= 10 && ([Sockets] == 0 || [Sockets] >= 5)		// Socketed Eth Sup //Death, Ebotd
 
+// Mosaic Base
+([Name] == Suwayyah || [Name] == FeralClaws || [Name] == RunicTalons || [Name] == GreaterTalons || [Name] == GreaterClaws) && Sockets == 3 && [Skillphoenixstrike] >= 2
+
 //-----------------------------------------------------
 //================= 2h Weapon Bases ================
 //-----------------------------------------------------
