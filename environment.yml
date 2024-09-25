@@ -8,30 +8,30 @@ dependencies:
   - leptonica
   - tesseract=5.1.0
   - pkg-config
-  - rapidfuzz
+  - rapidfuzz==1.9.0  # Latest stable in 2022
   - pip:
-    - pyinstaller
-    - opencv-python==4.5.5.64
-    - transitions
-    - mss
-    - numpy
-    - mouse
-    - keyboard
-    - beautifultable
-    - pytweening
-    - requests
-    - coverage
-    - pytest
-    - pytest-env
-    - pytest-pythonpath
-    - pytest-mock
-    - graphviz
-    - psutil
-    - cryptography
-    - pillow
-    - discord.py
-    - parse
-    - dependencies/tesserocr-2.5.2-cp310-cp310-win_amd64.whl
-    - typing_extensions
-    - colorama
-    - dataclasses-json
+    - pyinstaller==4.10  # Compatible with Python 3.10 in early 2022
+    - opencv-python==4.5.5.64  # Version specified in your file
+    - transitions==0.8.10  # Stable in 2022
+    - mss==6.1.0  # Stable in early 2022
+    - numpy==1.22.0  # Compatible with Python 3.10
+    - mouse==0.7.1  # Latest in 2022
+    - keyboard==0.13.5  # Latest in early 2022
+    - beautifultable==1.0.1  # Version available in 2022
+    - pytweening==1.0.4  # Stable in 2022
+    - requests==2.27.1  # Stable in early 2022
+    - coverage==6.3.1  # Latest in 2022
+    - pytest==7.0.1  # Latest in 2022
+    - pytest-env==0.6.2  # Latest in 2022
+    - pytest-pythonpath==0.7.3  # Version from 2022
+    - pytest-mock==3.7.0  # Latest from early 2022
+    - graphviz==0.19.1  # Stable in 2022
+    - psutil==5.9.0  # Latest in 2022
+    - cryptography==36.0.1  # Stable in early 2022
+    - pillow==9.0.1  # Version in early 2022
+    - discord.py==1.7.3  # The last official release
+    - parse==1.19.0  # Stable in 2022
+    - dependencies/tesserocr-2.5.2-cp310-cp310-win_amd64.whl  # Custom dependency
+    - typing_extensions==4.1.1  # Compatible with Python 3.10
+    - colorama==0.4.4  # Stable in 2022
+    - dataclasses-json==0.5.6  # Stable in 2022
