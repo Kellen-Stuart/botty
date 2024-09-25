@@ -28,9 +28,6 @@ class Pindle:
     def approach(self, start_loc: Location) -> bool | Location:
         # Go through Red Portal in A5
         loc = self._town_manager.go_to_act(5, start_loc)
-        Logger.info('Healing')
-        loc = self._town_manager.heal(loc)
-        loc = self._town_manager.go_to_act(5, loc)
         Logger.info("Run Pindle")
         if not loc:
             return False
