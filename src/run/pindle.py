@@ -29,7 +29,7 @@ class Pindle:
         # Go through Red Portal in A5
         loc = self._town_manager.go_to_act(5, start_loc)
         Logger.info('Healing')
-        self._town_manager.heal()
+        self._town_manager.heal(loc)
         Logger.info("Run Pindle")
         if not loc:
             return False
