@@ -610,7 +610,7 @@
 //================= Gloves ================
 //-----------------------------------------
 
-[Type] == Gloves && Quality == Rare
+[Type] == Gloves && [Quality] == Rare
 //[Type] == Gloves && [Quality] == Rare && [Flag] != Ethereal # [Dexterity]+[Strength] >= 25 && [Coldresist]+[Fireresist]+[Lightresist] >= 55
 //[Type] == Gloves && [Quality] == Rare && [Flag] != Ethereal # [Ias] >= 20 && [Dexterity]+[Strength] >= 20 && ([Bowandcrossbowskilltab] == 2 || [Passiveandmagicskilltab] == 2 || [Javelinandspearskilltab] == 2 || [Coldresist]+[Fireresist]+[Lightresist] >= 35 || [Coldresist]+[Fireresist] >= 40 || [Coldresist]+[Lightresist] >= 40 || [Fireresist]+[Lightresist] >= 40)
 //[Type] == Gloves && [Quality] == Rare && [Flag] != Ethereal # [Ias] >= 20 && ([Bowandcrossbowskilltab] == 2 || [Passiveandmagicskilltab] == 2 || [Javelinandspearskilltab] == 2) && ([Dexterity] >= 10 || [Strength] >= 10 || [Strength]+[Dexterity] >= 20 || [Dexterity] >= 12 && [Coldresist]+[Fireresist]+[Lightresist] >= 25 || [Lifeleech]+[Manaleech] >= 6)
@@ -825,7 +825,7 @@
 //[Name] == Berserkeraxe && [Quality] == Superior && [Flag] == Ethereal # [Enhanceddamage] >= 10 && ([Sockets] == 0 || [Sockets] >= 5)		// Socketed Eth Sup //Death, Ebotd
 
 // Mosaic Base
-([Name] == Suwayyah || [Name] == FeralClaws || [Name] == RunicTalons || [Name] == GreaterTalons || [Name] == GreaterClaws) && ([Sockets] > 0)
+([Name] == Suwayyah || [Name] == FeralClaws || [Name] == RunicTalons || [Name] == GreaterTalons || [Name] == GreaterClaws) # ([Sockets] > 0)
 
 //-----------------------------------------------------
 //================= 2h Weapon Bases ================
