@@ -136,6 +136,7 @@
 //-----------------------------------------------
 
 [Name] == Grandcharm && [Quality] == Magic
+[Name] == Grandcharm && [Quality] == Unique
 //[Name] == Grandcharm && [Quality] == Magic # [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 60 // Plain +15 All Res
 //[Name] == Grandcharm && [Quality] == Magic # [Itemaddskilltab] >= 1 // All Plain Skillers
 //[Name] == Grandcharm && [Quality] == Magic # ([Coldresist] >= 30 || [Fireresist] >= 30 || [Lightresist] >= 30 || [Poisonresist] >= 30)      // All +30 Single Res Gc
