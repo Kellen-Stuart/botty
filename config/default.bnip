@@ -135,6 +135,7 @@
 //================= Grand Charms ================
 //-----------------------------------------------
 
+[Name] == Grandcharm && [Quality] == Magic
 //[Name] == Grandcharm && [Quality] == Magic # [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 60 // Plain +15 All Res
 //[Name] == Grandcharm && [Quality] == Magic # [Itemaddskilltab] >= 1 // All Plain Skillers
 //[Name] == Grandcharm && [Quality] == Magic # ([Coldresist] >= 30 || [Fireresist] >= 30 || [Lightresist] >= 30 || [Poisonresist] >= 30)      // All +30 Single Res Gc
@@ -251,6 +252,7 @@
 //================= Small Charms ================
 //-----------------------------------------------
 
+[Name] == Smallcharm && [Quality] == Magic
 //[Name] == Smallcharm && [Quality] == Magic # [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 20    // +5 All Res
 //[Name] == Smallcharm && [Quality] == Magic # [Maxhp] >= 15          // Plain +Hp
 //[Name] == Smallcharm && [Quality] == Magic # [Itemmagicbonus] >= 7     // Plain +Magic Find
