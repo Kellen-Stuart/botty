@@ -844,7 +844,7 @@
 // <<<<<<<<< [ Non-Ethereal 2h Non-Superior Socketed Weapons ] >>>>>>>>>
 //[Name] == Warpike && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
 //[Name] == Colossusvoulge && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
-//[Name] == Thresher && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
+[Name] == Thresher && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
 //[Name] == Giantthresher && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
 //[Name] == Crypticaxe && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
 //[Name] == Greatpoleaxe && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
