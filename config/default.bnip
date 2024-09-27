@@ -1416,7 +1416,7 @@
 
 //[Name] == Studdedleather && [Quality] == Unique && [Flag] != Ethereal # [Dexterity] == 10        // Twitchthroe
 //[Name] == Studdedleather && [Quality] == Unique && [Flag] != Ethereal # [Defense] == 60        // Twitchthroe Perfect
-//[Name] == Ghostarmor && [Quality] == Unique && [Flag] != Ethereal # [Magicdamagereduction] >= 7     // The Spirit Shroud
+[Name] == Ghostarmor && [Quality] == Unique && [Flag] != Ethereal # [Magicdamagereduction] >= 7     // The Spirit Shroud
 //[Name] == Ghostarmor && [Quality] == Unique && [Flag] != Ethereal # [Magicdamagereduction] == 11     // The Spirit Shroud Perfect
 [Name] == Serpentskinarmor && [Quality] == Unique && [Flag] != Ethereal # [Magicdamagereduction] >= 9 && [Allres] >= 20     // Skin Of The Vipermagi
 //[Name] == Serpentskinarmor && [Quality] == Unique && [Flag] != Ethereal # [Magicdamagereduction] == 13 && [Allres] == 35     // Skin Of The Vipermagi Perfect
@@ -1445,11 +1445,11 @@
 [Name] == Wirefleece && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddefense] >= 150 && [Normaldamagereduction] >= 15 && [Magicdamagereduction] >= 15       // Eth The Gladiator's Bane
 [Name] == Wirefleece && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] == 180 && [Normaldamagereduction] == 20 && [Magicdamagereduction] == 20      // The Gladiator's Bane Perfect
 //[Name] == Wirefleece && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddefense] == 180 && [Normaldamagereduction] == 20 && [Magicdamagereduction] == 20      // Eth The Gladiator's Bane Perfect
-//[Name] == Balrogskin && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 150 && [Normaldamagereduction] >= 10       // Arkaine's Valor
+[Name] == Balrogskin && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 150 && [Normaldamagereduction] >= 10       // Arkaine's Valor
 //[Name] == Balrogskin && [Quality] == Unique && [Flag] != Ethereal # [Itemallskills] == 2 && [Enhanceddefense] == 180 && [Normaldamagereduction] == 15       // Arkaine's Valor Perfect
-//[Name] == Krakenshell && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 170 && [Plusdefense] >= 100 && [Strength] >= 40       // Leviathan
+[Name] == Krakenshell && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 170 && [Plusdefense] >= 100 && [Strength] >= 40       // Leviathan
 //[Name] == Krakenshell && [Quality] == Unique && [Flag] != Ethereal # [DamageResist] == 25 && [Enhanceddefense] == 200 && [Plusdefense] == 150 && [Strength] == 50       // Leviathan Perfect
-//[Name] == Sacredarmor && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 120 && [Strength] >= 20 && [Allres] >= 20       // Tyrael's Might
+[Name] == Sacredarmor && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 120 && [Strength] >= 20 && [Allres] >= 20       // Tyrael's Might
 [Name] == Sacredarmor && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] == 150 && [Strength] == 30 && [Allres] == 30 && [Itemdemondamagepercent] == 100       // Tyrael's Might Perfect
 
 
