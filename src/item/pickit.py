@@ -124,7 +124,7 @@ class PickIt:
         self._prev_item_pickup_attempt = item
         return self._yoink_item(item, char)
 
-    def show_items(self, char: IChar) -> bool
+    def show_items(self, char: IChar) -> bool:
         keyboard.send(Config().char["show_items"])
         
     def pick_up_items(self, char: IChar) -> bool:
