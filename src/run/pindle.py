@@ -55,5 +55,5 @@ class Pindle:
         wait(0.2, 0.3)
         picked_up_items = self._pickit.pick_up_items(self._char)
         self._pickit.show_items(self._char)
-        wait(5, 30)
+        wait(10, 30)
         return (Location.A5_PINDLE_END, picked_up_items)
