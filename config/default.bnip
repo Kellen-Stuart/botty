@@ -472,6 +472,7 @@
 //[Type] == Ring && [Quality] == Rare # [Fcr] >= 10 && [Hpregen] >= 5 && [Maxmana] >= 25 && [Strength] >= 0     // Lld Caster Ring
 
 // <<<<<<<<< [ Rare Jewels ] >>>>>>>>>
+[Type] == Jewel && ([Quality] == Magic || [Quality] == Rare)
 //[Type] == Jewel && [Quality] == Rare # [Maxdamage] >= 18 && [Mindamage] >= 18     // Impossible 18/18 Jewel
 //[Type] == Jewel && [Quality] == Rare # [Maxdamage] >= 12 && [Mindamage] >= 12     // Min/Max Damage Jewel
 //[Type] == Jewel && [Quality] == Rare # [Strength] >= 7 && [Dexterity] >= 7 && ([Fhr] >= 7 || [Enhanceddamage] >= 30 || [Fireresist]+[Lightresist]+[Coldresist]+[Poisonresist] >= 30 || [Itemreqpercent] <= -15)     // Stat Jewel
