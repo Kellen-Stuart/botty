@@ -52,7 +52,7 @@
 //================= Runes ================
 //----------------------------------------
 
-//[Name] >= Lumrune && [Name] <= Zodrune
+[Name] >= Lumrune && [Name] <= Zodrune
 [Name] == Elrune
 [Name] == Eldrune
 [Name] == Tirrune
