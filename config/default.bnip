@@ -96,14 +96,14 @@
 [Name] == Chippedemerald
 [Name] == Chippedruby
 [Name] == Chippedsapphire
-#[Name] == Chippedskull
+//[Name] == Chippedskull
 [Name] == Chippedtopaz
 [Name] == Flawedamethyst
 [Name] == Flaweddiamond
 [Name] == Flawedemerald
 [Name] == Flawedruby
 [Name] == Flawedsapphire
-#[Name] == Flawedskull
+//[Name] == Flawedskull
 [Name] == Flawedtopaz
 [Name] == Amethyst
 [Name] == Diamond
