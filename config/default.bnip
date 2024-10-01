@@ -1548,7 +1548,7 @@
 //[Name] == Ogreaxe && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 270       // Bonehew
 //[Name] == Ogreaxe && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] >= 270       // Eth Bonehew
 [Name] == Ogreaxe && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] == 320      // Eth Bonehew Perfect
-//[Name] == Thresher && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 190     // The Reaper's Toll
+[Name] == Thresher && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 190     // The Reaper's Toll
 [Name] == Thresher && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] >= 190     // Eth The Reaper's Toll
 //[Name] == Thresher && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] == 240 && [Lifeleech] == 15     // Eth The Reaper's Toll Perfect
 //[Name] == Crypticaxe && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 200 && [Sockets] >= 1     // Tomb Reaver
