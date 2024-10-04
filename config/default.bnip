@@ -595,7 +595,7 @@
 //================= Belts ================
 //----------------------------------------
 
-[Type] == Belt && [Quality] == Rare
+//[Type] == Belt && [Quality] == Rare
 //[Type] == Belt && [Quality] == Rare && [Flag] != Ethereal # [Fhr] >= 24 && [Strength] >= 20 && ([Maxhp] >= 40 || [Itemgoldbonus] >= 75 || [Lightresist] >= 20 && [Fireresist] >= 20 && [Coldresist] >= 20 || [Fireresist]+[Coldresist] >= 40 || [Fireresist]+[Lightresist] >= 40 || [Lightresist]+[Coldresist] >= 40)
 //[Type] == Belt && [Quality] == Rare && [Flag] == Ethereal # [Enhanceddefense] >= 90 && [Itemreplenishdurability] >= 1 && ([Fhr] >= 17 || [Coldresist]+[Fireresist]+[Lightresist] >= 25 || [Strength]+[Dexterity] >= 10 || [Maxhp] >= 20 || [Fireresist]+[Coldresist] >= 40 || [Fireresist]+[Lightresist] >= 40 || [Lightresist]+[Coldresist] >= 40)
 //[Type] == Belt && [Quality] == Rare && [Flag] == Ethereal # [Fhr] == 24 && [Strength] >= 20 && [Maxhp] >= 55 && [Itemreplenishdurability] >= 1
