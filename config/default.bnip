@@ -112,7 +112,7 @@
 //[Name] == Skull
 //[Name] == Sapphire
 //[Name] == Topaz
-//[Name] == Flawlessamethyst
+[Name] == Flawlessamethyst
 //[Name] == Flawlessdiamond
 //[Name] == Flawlessemerald
 //[Name] == Flawlessruby
@@ -426,7 +426,7 @@
 //================= Gloves =================
 //------------------------------------------
 
-//[Type] == Gloves && ([Quality] == Rare || [Quality] == Magic)
+[Type] == Gloves && ([Quality] == Rare || [Quality] == Magic)
 //[Type] == Gloves && [Quality] == Magic && [Flag] != Ethereal # [Ias] >= 20 && ([Javelinandspearskilltab] == 3 || [Bowandcrossbowskilltab] == 3 || [Martialartsskilltab] == 3)     // 3/20 Gloves
 
 //========================================================================//
@@ -438,8 +438,8 @@
 //------------------------------------------
 
 // <<<<<<<<< [ Rare Misc. Amulets ] >>>>>>>>>
-//[Type] == Amulet && [Quality] == Rare
-//[Type] == Ring && [Quality] == Rare
+[Type] == Amulet && [Quality] == Rare
+[Type] == Ring && [Quality] == Rare
 //[Type] == Amulet && [Quality] == Rare # [Itemchargedskill] == 54        // Rare Tele Amulet
 //[Type] == Amulet && [Quality] == Rare # [Barbarianskills] == 2 && ([Itemgoldbonus] >= 70 && [Itemmagicbonus] >= 15 || [Itemgoldbonus] >= 80)      // Gf Amulet
 
